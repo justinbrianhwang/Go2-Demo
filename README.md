@@ -1,5 +1,8 @@
 # Go2-Like Quadruped Robot Demo (PyBullet)
 
+<img width="963" height="615" alt="image" src="https://github.com/user-attachments/assets/1a2d55df-ae27-4d04-991e-b1bfd007691c" />
+
+
 A **demo-level quadruped robot simulation** inspired by the Unitree Go2 Air, implemented entirely in **PyBullet**.  
 This project is NOT an official Unitree product, nor does it attempt to perfectly replicate Unitree's mechanical or control systems.  
 It is a **non-commercial educational demo** for robotics learning, simulation, and prototyping.
@@ -51,6 +54,17 @@ python go2_sim.py
 - It does not attempt to replicate the full physics, controls, or sensing capabilities of real quadruped robots.
 - The gait controller is intentionally simplified.
 - For academic or commercial-grade robotics simulation, consider combining with ROS2, Isaac Gym, Mujoco, or Bullet Real-Time API.
+
+
+## Demo Video
+[video](https://www.youtube.com/watch?v=QqI0uDcRvp8)
+
+## License
+MIT License
+
+This project is released for educational and research purposes only.
+
+
 
 
 
