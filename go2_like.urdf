@@ -6,19 +6,40 @@
       <mass value="5.0"/>
       <inertia ixx="0.2" iyy="0.2" izz="0.2" ixy="0" ixz="0" iyz="0"/>
     </inertial>
+    <!-- Main body - silver gray -->
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.4 0.2 0.1"/>
+        <box size="0.4 0.25 0.12"/>
       </geometry>
-      <material name="gray">
-        <color rgba="0.6 0.6 0.6 1"/>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
+    </visual>
+    <!-- Top section - darker gray -->
+    <visual>
+      <origin xyz="0 0 0.06" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.35 0.22 0.02"/>
+      </geometry>
+      <material name="dark_silver">
+        <color rgba="0.4 0.45 0.5 1"/>
+      </material>
+    </visual>
+    <!-- Front head section -->
+    <visual>
+      <origin xyz="0.17 0 0.02" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.08 0.18 0.08"/>
+      </geometry>
+      <material name="dark_silver">
+        <color rgba="0.4 0.45 0.5 1"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.4 0.2 0.1"/>
+        <box size="0.4 0.25 0.12"/>
       </geometry>
     </collision>
   </link>
@@ -33,13 +54,16 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <sphere radius="0.04"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <sphere radius="0.04"/>
       </geometry>
     </collision>
   </link>
@@ -53,13 +77,16 @@
     <visual>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.2"/>
+        <cylinder radius="0.028" length="0.2"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.2"/>
+        <cylinder radius="0.028" length="0.2"/>
       </geometry>
     </collision>
   </link>
@@ -70,16 +97,36 @@
       <mass value="0.2"/>
       <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0"/>
     </inertial>
+    <!-- Upper shank - silver -->
     <visual>
-      <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+      <origin xyz="0 0 -0.08" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.04 0.2"/>
+        <cylinder radius="0.022" length="0.16"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
+    </visual>
+    <!-- Foot pad - black rubber-like -->
+    <visual>
+      <origin xyz="0 0 -0.19" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.032" length="0.04"/>
+      </geometry>
+      <material name="black_rubber">
+        <color rgba="0.15 0.15 0.15 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.04 0.2"/>
+        <cylinder radius="0.022" length="0.2"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.19" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.032" length="0.04"/>
       </geometry>
     </collision>
   </link>
@@ -94,13 +141,16 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <sphere radius="0.04"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <sphere radius="0.04"/>
       </geometry>
     </collision>
   </link>
@@ -114,13 +164,16 @@
     <visual>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.2"/>
+        <cylinder radius="0.028" length="0.2"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.2"/>
+        <cylinder radius="0.028" length="0.2"/>
       </geometry>
     </collision>
   </link>
@@ -131,16 +184,36 @@
       <mass value="0.2"/>
       <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0"/>
     </inertial>
+    <!-- Upper shank - silver -->
     <visual>
-      <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+      <origin xyz="0 0 -0.08" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.04 0.2"/>
+        <cylinder radius="0.022" length="0.16"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
+    </visual>
+    <!-- Foot pad - black rubber-like -->
+    <visual>
+      <origin xyz="0 0 -0.19" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.032" length="0.04"/>
+      </geometry>
+      <material name="black_rubber">
+        <color rgba="0.15 0.15 0.15 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.04 0.2"/>
+        <cylinder radius="0.022" length="0.2"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.19" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.032" length="0.04"/>
       </geometry>
     </collision>
   </link>
@@ -155,13 +228,16 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <sphere radius="0.04"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <sphere radius="0.04"/>
       </geometry>
     </collision>
   </link>
@@ -175,13 +251,16 @@
     <visual>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.2"/>
+        <cylinder radius="0.028" length="0.2"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.2"/>
+        <cylinder radius="0.028" length="0.2"/>
       </geometry>
     </collision>
   </link>
@@ -192,16 +271,36 @@
       <mass value="0.2"/>
       <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0"/>
     </inertial>
+    <!-- Upper shank - silver -->
     <visual>
-      <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+      <origin xyz="0 0 -0.08" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.04 0.2"/>
+        <cylinder radius="0.022" length="0.16"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
+    </visual>
+    <!-- Foot pad - black rubber-like -->
+    <visual>
+      <origin xyz="0 0 -0.19" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.032" length="0.04"/>
+      </geometry>
+      <material name="black_rubber">
+        <color rgba="0.15 0.15 0.15 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.04 0.2"/>
+        <cylinder radius="0.022" length="0.2"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.19" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.032" length="0.04"/>
       </geometry>
     </collision>
   </link>
@@ -216,13 +315,16 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <sphere radius="0.04"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.05"/>
+        <sphere radius="0.04"/>
       </geometry>
     </collision>
   </link>
@@ -236,13 +338,16 @@
     <visual>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.2"/>
+        <cylinder radius="0.028" length="0.2"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.05 0.05 0.2"/>
+        <cylinder radius="0.028" length="0.2"/>
       </geometry>
     </collision>
   </link>
@@ -253,16 +358,36 @@
       <mass value="0.2"/>
       <inertia ixx="0.001" iyy="0.001" izz="0.001" ixy="0" ixz="0" iyz="0"/>
     </inertial>
+    <!-- Upper shank - silver -->
     <visual>
-      <origin xyz="0 0 -0.1" rpy="0 0 0"/>
+      <origin xyz="0 0 -0.08" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.04 0.2"/>
+        <cylinder radius="0.022" length="0.16"/>
       </geometry>
+      <material name="silver">
+        <color rgba="0.6 0.65 0.7 1"/>
+      </material>
+    </visual>
+    <!-- Foot pad - black rubber-like -->
+    <visual>
+      <origin xyz="0 0 -0.19" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.032" length="0.04"/>
+      </geometry>
+      <material name="black_rubber">
+        <color rgba="0.15 0.15 0.15 1"/>
+      </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.1" rpy="0 0 0"/>
       <geometry>
-        <box size="0.04 0.04 0.2"/>
+        <cylinder radius="0.022" length="0.2"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 -0.19" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.032" length="0.04"/>
       </geometry>
     </collision>
   </link>

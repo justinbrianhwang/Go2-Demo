@@ -13,8 +13,9 @@ class Go2LikeRobot:
         p.setGravity(0, 0, -9.81)
         p.setRealTimeSimulation(0)
 
-        # 평면 + 로봇 로드
-        self.plane_id = p.loadURDF("plane.urdf")
+        # 평면 생성
+        self.plane_id = p.createCollisionShape(p.GEOM_PLANE)
+        p.createMultiBody(0, self.plane_id)
         start_pos = [0, 0, 0.45]
         start_orn = p.getQuaternionFromEuler([0, 0, 0])
 
