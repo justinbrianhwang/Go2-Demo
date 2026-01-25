@@ -1,6 +1,7 @@
 # Go2-Like Quadruped Robot Demo (PyBullet)
 
-<img width="963" height="615" alt="image" src="https://github.com/user-attachments/assets/1a2d55df-ae27-4d04-991e-b1bfd007691c" />
+<img width="1216" height="743" alt="image" src="https://github.com/user-attachments/assets/5c90c2b0-4798-45cd-b049-e6e551f72875" />
+
 
 
 A **demo-level quadruped robot simulation** inspired by the Unitree Go2 Air, implemented entirely in **PyBullet**.  
