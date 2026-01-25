@@ -141,7 +141,7 @@ Bug reports and feature suggestions are welcome via issues!
 
 
 ## Demo Video
-[video](https://www.youtube.com/watch?v=QqI0uDcRvp8)
+[video](https://youtu.be/3vraZ8u-9C8)
 
 ## 🙏 Acknowledgments
 - **Unitree Robotics** - Go2 robot design inspiration
